@@ -1,0 +1,51 @@
+body {
+    background-image: url(background.jpg);
+    font-size: 1.4em;
+}
+
+.about-me-header {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.posts-container {
+    text-align: center;
+}
+
+.posts-list {
+    display: inline-block;
+    list-style: none;
+}
+
+nav {
+    float: left;
+}
+
+.nav-header {
+    overflow: auto;
+}
+
+ul.nav-ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    font-family: raleway;
+}
+
+.logo {
+    float: left;
+}
+
+pre {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+ul.posts-ul li {
+    list-style: none;
+    margin: 60px 0;
+}
