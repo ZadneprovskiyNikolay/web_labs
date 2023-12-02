@@ -4,41 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="blog">
+    <meta name= "robots" content="index, nofollow">
+    <meta name="description" content="Personal blog about my coding, games, fitness and lifestyle">
+    <meta name="keywords" content="coding, games, fitness, lifestyle">
+    <meta name="author" content="Nikolay Zadneprovskiy">
     <title>My Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     
-    <div class="nav-header">
-        <img src="logo.png" alt="Logo" height="70" width="70" class="logo">
+    <div class="nav_header">
+        <img src="images/logo.png" class="logo" alt="Logo">
 
         <nav>
-            <ul class="nav-ul">
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contacts">Contacts</a></li>
+            <ul class="nav_ul">
+                <li><a class="nav_link" href="blog">Blog</a></li>
+                <li><a class="nav_link" href="contacts">Contacts</a></li>
             </ul>
         </nav>
     </div>
 
-    <header class="about-me-header">
-        <img src="my_photo.jpg" alt="My Photo" height="200" width="200" class="my-photo">
-        <ul>
+    <header class="about_me_header">
+        <img class="my_photo hidden" src="images/my_photo.jpg" alt="My Photo">
+        <ul class="about_me_ul">
             <li>
                 <b>About Me</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
                     eleifend aliquet. Integer fringilla vehicula urna, eu posuere tortor.
             </li>
             <li>
-                <b>My credo</b>: "Не надо менять себя ради кого-то, надо менять носки каждый день, а то воняют."<sub>Glad Valakas</sub>
+                <b>My credo</b>: <q>Не надо менять себя ради кого-то, надо менять носки каждый день, а то воняют.</q>  <sub>Glad Valakas</sub>
             </li>
         </ul>
-    
     </header>
 
     <main>
-        <section class="posts-container">
+        <section class="posts_section">
             <h1>Posts</h1>
-            <ul class="posts-ul">
+            <ul class="posts_ul">
                 <li>
                     <article>
                         <h4>4 сентября 2023</h4>
@@ -65,28 +68,52 @@ func main() {
                     ______|     /__-\ \_=.\              |       |          \ )  -      -
                    (XXXXX/'`------)))`=-'"`'"___________/__/__\___\___ _ _ _ \)___________       
                             </pre>
-
-                            <img src="meme.jpg" alt="meme" height="600" width="400">
-                    </article>
                 </li>
+                <li>
+                    <article>
+                        <h4>2 сентября 2023</h4>
+                            <img src="images/meme1.jpg" alt="meme" height="400" width="400">
+                            <img src="images/meme2.png" alt="meme" height="400" width="400">
+                            <img src="images/meme3.png" alt="meme" height="400" width="400">
+                            <img src="images/meme4.png" alt="meme" height="400" width="600">
+                        </article>
+                    </li>
+                </li>
+                    </article>
+                </li>   
 
                 <li>
                     <article>
                         <h4>1 сентября 2023</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Egestas fringilla phasellus faucibus
-                                scelerisque. Ut faucibus pulvinar elementum integer enim neque volutpat ac. Metus
-                                vulputate eu scelerisque felis. Cursus in hac habitasse platea dictumst quisque
-                                sagittis. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque.
-                            </p>
-                            <p>
-                                Ut enim blandit volutpat maecenas volutpat blandit aliquam. Tellus pellentesque eu
-                                tincidunt tortor aliquam nulla facilisi cras. Fermentum dui faucibus in ornare quam
-                                viverra. Vitae turpis massa sed elementum tempus egestas sed sed risus. Pellentesque
-                                elit eget gravida cum. Eget nulla facilisi etiam dignissim. Dignissim suspendisse in est
-                                ante in nibh mauris cursus.
-                            </p>
+                        <div class="table-container">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>Заголовок 1</th>
+                                  <th>Заголовок 2</th>
+                                  <th>Заголовок 3</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Ячейка 1</td>
+                                  <td>Ячейка 2</td>
+                                  <td>Ячейка 3</td>
+                                </tr>
+                                <tr>
+                                  <td>Ячейка 4</td>
+                                  <td>Ячейка 5</td>
+                                  <td>Ячейка 6</td>
+                                </tr>
+                                <tr>
+                                  <td>Ячейка 7</td>
+                                  <td>Ячейка 8</td>
+                                  <td>Ячейка 9</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                              
                     </article>
                 </li>
 
@@ -100,15 +127,19 @@ func main() {
 
                             </p>
                     </article>
-                </li>
+                <!-- </li> -->
 
             </ul>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; <strong>2023 My Blog. All rights reserved.</strong> </p>
-    </footer>
+    <div>
+        <footer>
+            <p>&copy; <strong>2023 My Blog. All rights reserved.</strong> </p>
+        </footer>
+    </div>
 </body>
+
+<!-- <script src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"></script> -->
 
 </html>
