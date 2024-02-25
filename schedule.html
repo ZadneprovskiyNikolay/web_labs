@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="blog">
+    <meta name= "robots" content="index, nofollow">
+    <meta name="description" content="Personal blog about my coding, games, fitness and lifestyle">
+    <meta name="keywords" content="coding, games, fitness, lifestyle">
+    <meta name="author" content="Nikolay Zadneprovskiy">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/index.js"></script>
+    <script src="js/schedule.js"></script>
+</head>
+
+<body>
+    
+    <div class="nav-header">
+        <img src="images/logo.png" class="logo" alt="Logo">
+
+        <nav>
+            <ul class="nav-ul">
+                <li><a class="nav-link" id="nav-link-/" href="/">Blog</a></li>
+                <li><a class="nav-link" id="nav-link-/contacts.html" href="/contacts.html">Contacts</a></li>
+                <li><a class="nav-link" id="nav-link-/schedule.html" href="/schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="schedule">
+            <h1>Дела на сегодня</h1>
+
+            <div id="schedule-output">
+                <table id="schedule-table">
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Start Time</th>
+                        <th>Duration</th>
+                        <th>Comment</th>
+                    </tr>
+                </table>
+            </div>
+
+            <h4>Добавить дело:</h4>
+            <form id="add-task-form">
+                <label for="event-name">Название:</label>
+                <input type="text" id="event-name" name="event-name"><br><br>
+                <label for="event-start-time">Время:</label>
+                <input type="datetime-local" id="event-start-time" name="event-start-time"><br><br>                
+                <label for="event-duration">Длительность:</label>
+                <input type="time" id="event-duration" name="event-duration"><br><br>                
+                <label for="event-comment">Комментарий:</label>
+                <input type="text" id="event-comment" name="event-comment"><br><br>    
+                <div id="add-task-form-buttons">
+                    <input type="submit" value="Добавить"/>
+                    <input type="button" id="clear-chedule-btn" value="Очистить расписание"/>
+                    <input type="button" id="save-chedule-btn" value="Сохранить расписание"/>
+                    <input type="button" id="load-chedule-btn" value="Загрузить расписание"/>
+                </div>
+            </form>
+
+            
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <strong>2023 My Blog. All rights reserved.</strong> </p>
+        <div id="load-time"></div>
+    </footer>
+</body>
+
+<!-- <script src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"></script> -->
+
+</html>

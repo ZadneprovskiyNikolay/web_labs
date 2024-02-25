@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     /* background-image: url(background.jpg); */
     background-color: #8EC5FC;
     background-image: linear-gradient(to right, #71b0ef 0%, #E0C3FC 100%);
-
     font-size: 1.4em;
+    text-transform: none;
     line-height: 1.5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto';
     font-weight: normal;
     vertical-align: middle;
     background-color: #fff;
@@ -85,8 +87,10 @@ a.nav-link {
 }
 
 .posts-section {
-    /* margin: 120px 0 0 0; */
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 .posts-list {
@@ -128,17 +132,17 @@ footer {
     }
 }
 
-.table-container {
-    display: grid;
-    place-items: center;
-}
-
-table {
+.blog-table {
     border-collapse: collapse;
     width: 100%;
 }
 
-th, td {
+.blog-table tr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-table  th, td {
     padding: 10px;
     text-align: center;
 }
@@ -155,8 +159,8 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
     background-color: #e6e6e6;
 }
-  
-.contacts {
+
+.contacts, .schedule {
     margin: 70px;
     padding-top: 40px;
 }
@@ -165,4 +169,60 @@ img {
     width: 70%;
     max-width: 1200px;
     max-width: 800px;
+}
+
+#schedule-output {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#schedule-table  th, td {
+    padding: 10px 100px 10px 100px;
+}
+
+
+
+#add-task-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#add-task-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#add-task-form input[type="text"],
+#add-task-form input[type="datetime-local"],
+#add-task-form input[type="time"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#add-task-form input[type="submit"],
+#add-task-form input[type="button"] {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#add-task-form input[type="submit"]:hover,
+#add-task-form input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+#add-task-form-buttons {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
 }
