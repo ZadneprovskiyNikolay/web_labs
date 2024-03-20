@@ -1,141 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="blog">
-    <meta name= "robots" content="index, nofollow">
-    <meta name="description" content="Personal blog about my coding, games, fitness and lifestyle">
-    <meta name="keywords" content="coding, games, fitness, lifestyle">
-    <meta name="author" content="Nikolay Zadneprovskiy">
-    <title>My Blog</title>
-    <script rel="text/javascript" src="js/common.js"></script>
-    <script rel="text/javascript" src="js/index.js"></script>
-    <script src="js/index.js"></script>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="blog">
+        <meta name= "robots" content="index, nofollow">
+        <meta name="description" content="Personal blog about my coding, games, fitness and lifestyle">
+        <meta name="keywords" content="coding, games, fitness, lifestyle">
+        <meta name="author" content="Nikolay Zadneprovskiy">
+        <title>My Blog</title>
+        <script rel="text/javascript" src="js/common.js"></script>
+        <script rel="text/javascript" src="js/blog.js"></script>
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
 
-<body>
-    
-    <div class="nav-header">
-        <img src="images/logo.png" class="logo" alt="Logo">
+    <body>
+        
+        <div class="content">
+            <div class="nav-header">
+                <img src="images/logo.png" class="logo" alt="Logo">
 
-        <nav>
-            <ul class="nav-ul">
-                <li><a class="nav-link" href="/">Blog</a></li>
-                <li><a class="nav-link" href="/contacts.html">Contacts</a></li>
-                <li><a class="nav-link" href="/schedule.html">Schedule</a></li>
-            </ul>
-        </nav>
-    </div>
+                <nav>
+                    <ul class="nav-ul">
+                        <li><a class="nav-link" href="index.html">Blog</a></li>
+                        <li><a class="nav-link" href="contacts.html">Contacts</a></li>
+                        <li><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-    <header class="about-me-header">
-        <img class="my-photo hidden" src="images/my_photo.jpg" alt="My Photo">
-        <ul class="about-me-ul">
-            <li>
-                <b>About Me</b>: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                    eleifend aliquet.
-            </li>
-            <li>
-                <b>My credo</b>: <q>Не надо менять себя ради кого-то, надо менять носки каждый день, а то воняют.</q>  <sub>Glad Valakas</sub>
-            </li>
-        </ul>
-    </header>
+            <main>
+        
+                <section id="posts-section">
+                    <h1>Posts</h1>
+                    <ul id="posts-ul">
+                        <li>
+                            <article>
+                                <h4>10.09.2023 2:01:25 PM</h4>
+                                <h2>Earth pictures</h2>
+                                <div id="earth-pictures-calendar"></div>
+                            </article>
+                        </li>
+            
+                        <li>
+                            <article>
+                                <h4>04.09.2023 11:42:56 PM</h4>
+            
+                                    <pre>
+                                        <code>
+            package main
+            
+            import "fmt"
+            
+            func main() {
+            fmt.Println("lol")
+            }
+                                        </code>
+                                    </pre>
+            
+                                    <pre>
+                                                                    A
+                                        ___                         / \
+                                    .="   "=._.---.               /   \              ____________
+                                ."         c ' Y'`p            /     \            /)  -
+                                /     \     `\  w_/            :~~~~~~~:          / )-   .   -
+                            jgs   |      )  /     /              |       |         &lt;  )      -- 
+                            ______|     /__-\ \_=.\              |       |          \ )  -      -
+                        (XXXXX/'`------)))`=-'"`'"___________/__/__\___\___ _ _ _ \)___________       
+                                    </pre>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <h4>02.09.2023 5:42:59 AM</h4>
+                                    <img src="images/meme2.png" alt="meme2"><br>
+                                    <img src="images/meme3.png" alt="meme3"><br>
+                                    <img src="images/meme4.png" alt="meme4"><br>
+                                    <img src="images/meme1.jpg" alt="meme1"><br>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <h4>01.09.2023 10:22:09 AM</h4>
+                                <table class="blog-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Заголовок 1</th>
+                                            <th>Заголовок 2</th>
+                                            <th>Заголовок 3</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ячейка 1</td>
+                                            <td>Ячейка 2</td>
+                                            <td>Ячейка 3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ячейка 4</td>
+                                            <td>Ячейка 5</td>
+                                            <td>Ячейка 6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ячейка 7</td>
+                                            <td>Ячейка 8</td>
+                                            <td>Ячейка 9</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </article>
+                        </li>
+            
+                        <li>
+                            <article>
+                                <h4>29.08.2023, 15:52:10</h4>
+                                    <p>
+                                        Vitae suscipit tellus mauris a diam maecenas. Adipiscing elit ut aliquam purus sit amet
+                                        luctus venenatis. Ornare suspendisse sed nisi lacus. Non pulvinar neque laoreet
+                                        suspendisse interdum consectetur libero.
+            
+                                    </p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        
+        <footer class="footer">
+            <p>&copy; <strong>2023 My Blog. All rights reserved.</strong> </p>
+            <div id="load-time"></div>
+        </footer>
 
-    <main>
-        <section id="posts-section">
-            <h1>Posts</h1>
-            <ul id="posts-ul">
-                <li>
-                    <article>
-                        <h4>4 сентября 2023</h4>
-
-                            <pre>
-                                <code>
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("lol")
-}
-                                </code>
-                            </pre>
-
-                            <pre>
-                                                             A
-                                ___                         / \
-                             .="   "=._.---.               /   \              ____________
-                           ."         c ' Y'`p            /     \            /)  -
-                          /     \     `\  w_/            :~~~~~~~:          / )-   .   -
-                    jgs   |      )  /     /              |       |         &lt;  )      -- 
-                    ______|     /__-\ \_=.\              |       |          \ )  -      -
-                   (XXXXX/'`------)))`=-'"`'"___________/__/__\___\___ _ _ _ \)___________       
-                            </pre>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h4>2 сентября 2023</h4>
-                            <img src="images/meme2.png" alt="meme2"><br>
-                            <img src="images/meme3.png" alt="meme3"><br>
-                            <img src="images/meme4.png" alt="meme4"><br>
-                            <img src="images/meme1.jpg" alt="meme1"><br>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h4>1 сентября 2023</h4>
-                        <table class="blog-table">
-                            <thead>
-                                <tr>
-                                    <th>Заголовок 1</th>
-                                    <th>Заголовок 2</th>
-                                    <th>Заголовок 3</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Ячейка 1</td>
-                                    <td>Ячейка 2</td>
-                                    <td>Ячейка 3</td>
-                                </tr>
-                                <tr>
-                                    <td>Ячейка 4</td>
-                                    <td>Ячейка 5</td>
-                                    <td>Ячейка 6</td>
-                                </tr>
-                                <tr>
-                                    <td>Ячейка 7</td>
-                                    <td>Ячейка 8</td>
-                                    <td>Ячейка 9</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </article>
-                </li>
-
-                <li>
-                    <article>
-                        <h4>29.02.2024, 15:52:10</h4>
-                            <p>
-                                Vitae suscipit tellus mauris a diam maecenas. Adipiscing elit ut aliquam purus sit amet
-                                luctus venenatis. Ornare suspendisse sed nisi lacus. Non pulvinar neque laoreet
-                                suspendisse interdum consectetur libero.
-
-                            </p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; <strong>2023 My Blog. All rights reserved.</strong> </p>
-        <div id="load-time"></div>
-    </footer>
-</body>
-
-<!-- <script src="https://rawcdn.githack.com/ArtMan-8/outline-prototype/e73da2a1ee9031564b56ed5d98541891f7123933/js/outline-control.js"></script> -->
-
-</html>
+    </body>
+</html>    

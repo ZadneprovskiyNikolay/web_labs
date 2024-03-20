@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     highlightNavButton();
-    runMagic();
 });
 
 const highlightNavButton = () => {
@@ -14,20 +13,9 @@ const highlightNavButton = () => {
 
 (function () {
     const startTime = performance.now();
-    window.addEventListener('load', () => {
+    window.addEventListener('load', async () => {
         const loadTime = performance.now() - startTime;
-        document.getElementById("load-time").innerText = `Page loaded in ${loadTime} ms`;
+        document.getElementById("load-time").innerText =
+            `Loading time: ${loadTime.toFixed(0)} ms`;
     });
-
-        document.addEventListener('DOMContentLoaded',() => {
-        const observer = new PerformanceObserver((list) => {
-            const entry = list.getEntries()[0];
-            const pageLoadTime = entry.domContentLoadedEventEnd - entry.domContentLoadedEventStart;
-            
-        });
-        observer.observe({ type: "navigation", buffered: true });
-    })
 })();
-
-const runMagic = () => {    
-}

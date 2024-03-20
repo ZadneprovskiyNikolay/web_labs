@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html, body {
+    height: 100%;
+}
+
 body {
-    /* background-image: url(background.jpg); */
+    display: flex;
+    flex-direction: column;
     background-color: #8EC5FC;
     background-image: linear-gradient(to right, #71b0ef 0%, #E0C3FC 100%);
     font-size: 1.4em;
@@ -27,7 +32,7 @@ body {
     align-items: center;
     justify-content: left;
     background-color: #5ea0c9;
-    z-index: 1;
+    z-index: 3;
 }
 
 .logo {
@@ -61,6 +66,17 @@ ul.nav-ul a {
 a.nav-link {
     color: rgb(11, 54, 62);
     font-size: 25px;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    margin-top: 50px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 16pt;
 }
 
 .about-me-header {
@@ -121,12 +137,6 @@ ul#posts-ul li {
 .loading-gif {
     height: 30px;
     width: 30px;
-}
-
-footer {
-    margin-top: 100px;
-    color: rgba(0, 0, 0, 0.85);
-    font-size: 16pt;
 }
 
 @media (max-width: 1000px) {
@@ -228,4 +238,17 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15px;
+}
+
+.expandedSize {
+    width: 1000px;
+    height: 1000px;
+}
+
+.fc-col-header-cell {
+    background-color:#5ea0c9;
+}
+
+.fc-col-header-cell-cushion {
+    color: black;
 }
